@@ -8,8 +8,8 @@ int main()
 {
 	printnewline();
 	
-	/* Print the limits for char type */
-	printf("Type: char\n");
+	/****** Print the limits for CHAR type ******/
+	printf("Type: CHAR\n");
 
 	/* Unsigned char limits*/
 	printf("- Unsigned char: [%d, %d]\n", 0, UCHAR_MAX);
@@ -18,8 +18,22 @@ int main()
 
 	printnewline();
 
-	/* Print the limits for integer type */
-	printf("Type: int\n");
+
+
+	/****** Print the limits for SHORT type ******/
+	printf("Type: SHORT\n");
+
+	/* Unsigned integer limits*/
+	printf("- Unsigned char: [%d, %u]\n", 0, USHRT_MAX);
+	/* Signed integer limits*/
+	printf("- Signed char:\t [%d, %d]\n", SHRT_MIN, SHRT_MAX);
+
+	printnewline();
+
+
+
+	/****** Print the limits for INT type ******/
+	printf("Type: INT\n");
 
 	/* Unsigned integer limits*/
 	printf("- Unsigned char: [%d, %u]\n", 0, UINT_MAX);
@@ -28,6 +42,17 @@ int main()
 
 	printnewline();
 
+
+
+	/****** Print the limits for LONG type ******/
+	printf("Type: LONG\n");
+
+	/* Unsigned integer limits*/
+	printf("- Unsigned char: [%d, %lu]\n", 0, ULONG_MAX);
+	/* Signed integer limits*/
+	printf("- Signed char:\t [%ld, %ld]\n", LONG_MIN, LONG_MAX);
+
+	printnewline();
 
 }
 
