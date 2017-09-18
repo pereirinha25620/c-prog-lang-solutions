@@ -2,12 +2,31 @@
 #include <limits.h>		/* Header file containing the integer types sizes */
 #include <float.h>		/* Header file containing the floating types sizes */
 
+void prinfIntegerSizesFromHeader(void);
 void printnewline(void);
+
+
 
 int main()
 {
 	printnewline();
 	
+	/* INTEGER LIMITS FROM GLIBC HEADER FILE */
+	prinfIntegerSizesFromHeader();
+
+	//TODO:
+	/* FLOAT LIMITS */
+
+	/* Computed version of the limits determination */
+
+
+
+}
+
+
+/* Print the limits for the integer types from limits.h */
+void prinfIntegerSizesFromHeader(void)
+{
 	/****** Print the limits for CHAR type ******/
 	printf("Type: CHAR\n");
 
@@ -53,9 +72,10 @@ int main()
 	printf("- Signed char:\t [%ld, %ld]\n", LONG_MIN, LONG_MAX);
 
 	printnewline();
-
 }
 
+
+/* Helper function to print a new line in std output */
 void printnewline()
 {
 	putchar('\n');
