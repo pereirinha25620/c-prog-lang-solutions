@@ -18,8 +18,13 @@ int main()
 	return 0;
 }
 
-
 unsigned invert(unsigned x, int p, int n)
-{
+{	
+	/*
+	 * Position a mask of n-bit (all set to 1) at position p:
+	 * (~(~0 << n) << (p-n+1)) => ..001111000
+	 *
+	 * x XOR mask to invert
+	 */
 	return (~(~0 << n) << (p-n+1)) ^ x;
 }
